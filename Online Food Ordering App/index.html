@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Foodie App</h1>
+        <div>
+            <input type="text" id="search" placeholder="Search restaurants...">
+            <select id="sortby">
+                <option value="name">Sort by Name</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="vegan">Vegan</option>
+                <option value="non-vegan">Non-Vegan</option>
+            </select>
+        </div>
+    </nav>
+
+    <div id="restaurant-list" class="restaurant-list"></div>
+    <h2>Cart</h2>
+    <div id="cart" class="cart"></div>
+    <button id="checkout-button">Checkout</button>
+
+    <div id="checkout" class="checkout hidden"></div>
+
+    <script src="services/restaurantService.js"></script>
+    <script src="components/RestaurantCard.js"></script>
+    <script src="components/RestaurantList.js"></script>
+    <script src="components/Cart.js"></script>
+    <script src="components/Checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
