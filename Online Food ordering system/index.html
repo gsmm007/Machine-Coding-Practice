@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">Foodie</h1>
+                <input type="text" id="search" placeholder="Search for restaurants..." />
+            </div>
+            <div class="navbar-right">
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="fastfood">Fast Food</option>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+                <select id="sort">
+                    <option value="name">Sort by Name</option>
+                    <option value="rating">Sort by Rating</option>
+                    <option value="eta">Sort by ETA</option>
+                </select>
+                <button id="show-favorites">Show Favorites</button>
+            </div>
+        </nav>
+    </header>
+    <main id="restaurant-list" class="restaurant-list"></main>
+    <script src="index.js"></script>
+</body>
+</html>
